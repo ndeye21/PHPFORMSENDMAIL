@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		 <meta charset="utf-8" />
+         <link rel="shorcut icon" href="img/ic.PNG" type="image/x-icon" />
+         <link rel="stylesheet" href="style.css" />
+         <link rel="stylesheet" href="menu.css" />
+         <title>MY PROFILE</title>
+	</head>
+	<body>
+		
+		
+			<header>
+				
+					<center>
+						<div id="galerie-menu">
+              <!-- Notre navigation -->
+						 <nav>
+							<a href="#" tabindex="0" title="beau!"    ><img src="img/so.JPG"  alt="im1"/></a>
+							<a href="#" tabindex="0" title="attractive"         ><img src="img/bg.JPG"  alt="im2"/></a>
+							<a href="#" tabindex="0" title="paysage"><img src="img/bg1.JPG"  alt="im3"/></a>
+							<a href="#" tabindex="0" title="nature"><img src="img/avatar.JPG" alt="im4"  /></a>
+						 </nav>
+					   </div>
+						<h1>Ndeye FALL</h1>
+					
+						<h2>ndeyeFall23</h2>
+				
+					</center>
+			</header>
+					<hr class="mine" />
+					<h1>QUI SUIS-JE?</h1>
+				<section id="nicetext">
+
+					<p>
+
+					   <img src="img/jb.PNG" class="imageflottante" height="150" width="150" alt="Image flottante" />e me nomme Ndeye et J’ai 25 ans. Je suis <a href="https://www.lesechos.fr/15/04/2012/lesechos.fr/0202011668879_--plumes---de-candidats.htm" target="_blank"><strong>attachee presidentielle</strong></a> spécialisée sur les langues étrangères. Je parle plusieurs langues parmi le français, l’anglais, l’arabe, le chinois, le souahili, l’hébreu …Avec mon équipe on est chargée de la rédaction des discours lors des voyages internationaux mais aussi des interprétations. J’adore mon travail même si je suis des fois sous pression. J’adore ma famille que je vois rarement à cause de mes nombreux déplacements.
+						
+					
+				    </p>
+
+				    <p>
+				    	Qu'elles choisissent l'ombre ou la lumière, les plumes savent se rendre indispensable à leur patron. Qu'un candidat lise ses discours tels quels ou s'en évade, autoriser un autre à mettre des mots dans votre bouche nécessite une grande confiance. 
+				    </p>
+				   
+			</section>
+				
+			<footer>
+				<center>
+					<br/> <br/>
+
+    <h3>Vous souhaitez me contacter ? Cliquez dessus!</h3>  
+
+    <a href="https://twitter.com/KhadijaFALL23"><img src="img/tw.PNG" height="50" width="50" alt="contact" title="Cliquer pour voir" /></a>
+    <a href="https://www.facebook.com/profile.php?id=100027664965145"><img src="img/fa.PNG" height="50" width="50" alt="contact" title="Cliquer pour voir" /></a>
+
+
+			  </center>
+			
+		   </footer>
+		   <section id="form">
+			<form  name="formulaire" novalidate class="contact_form"  method="post" onsubmit="return verifForm(this)">
+			
+					<ul>
+							<li>
+								 <h2>Formulaire de Contact</h2><br>
+								 
+							</li>
+							
+							<li>
+								<label for="name" >Nom:</label> <br>
+								<input  class="style" type="text" name="nom" placeholder="ndeye" onblur="verifNom(this)" />
+                            </li>
+                           
+							<li>
+								<label for="email" >Email:</label><br>
+								<input  class="style"  type="email" name="email" placeholder="ndeye_leye@example.com" onblur="verifMail(this)"/>
+								
+                            </li>
+                            
+							<li>
+								<label for="mes">Message:</label><br>
+								<textarea  class="style"  name="mes" cols="40" rows="6" onblur="verifMessage(this)" ></textarea>
+                            </li>
+                           
+						<li>Homme<input id="choix1" class="radio" type="radio" name="gender" value="male" ></li>
+                            <li>Femme <input  id="choix2" class="radio" type="radio" name="gender" value="female"> </li> 
+                            
+							<li>
+                                    <fieldset>
+                                            <legend>choississez vos spots favoris!</legend>
+                                        
+                                            <input id="option1" type="checkbox" name="mycheck" value="foot"> FOOTBALL<br>
+                                            <input  id="option2" type="checkbox" name="mycheck" value="basket"> BASKETBALL<br>
+                                            <input  id="option3" type="checkbox" name="mycheck" value="nat"> NATATION<br>
+                                            <input  id="option4" type="checkbox" name="mycheck" value="lutte" > LUTTE<br>
+                                            <input  id="option5" type="checkbox" name="mycheck" value="ten" > TENNIS<br>
+                                            <input  id="option6" type="checkbox" name="mycheck" value="box"> BOX<br>
+                                        </fieldset><br>    
+                                       
+                                        <fieldset >
+                                                <legend>choississez un pays!</legend>
+                                                <select name="pays" id="pays">
+                                                    <option value="default"></option>
+                                                    <option  value="senegal">SENEGAL</option>
+                                                    <option value="mauritanie">MAURITANIE</option>
+                                                    <option value="mali">MALI</option>
+                                                    <option value="guinee">GUINEE</option>
+                                                </select>
+                                        </fieldset><br>
+                                       
+								<button class="submit env" type="submit"   name="action" >envoyer</button>
+							
+								<button class="submit an" type="reset">annuler</button>
+							</li>
+                        </ul>
+                       
+                
+					</form>
+
+			<script type="text/javascript">
+			function surligne(champ, erreur)
+                    {
+                    if(erreur)
+                        champ.style.backgroundColor = "#fba";
+                    else
+                        champ.style.backgroundColor = "";
+                    }
+               
+                function verifNom(n)
+                    {
+                    if(n.value.length < 1 || n.value.length > 25)
+                    {
+                        surligne(n, true);
+                        alertnom = "Indiquer votre nom \n";
+                        return false;
+                    }
+                    else
+                    {
+                        surligne(n, false);
+                        alertnom="";
+                        return true;
+                    }
+                    } 
+
+                    function verifMail(m)
+                        {
+                        var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+                        if(!regex.test(m.value))
+                        {
+                            surligne(m, true);
+                            alertmail = "Indiquer votre email correctement\n";
+                            return false;
+                        }
+                        else
+                        {
+                            surligne(m, false);
+                            alertmail="";
+                            return true;
+                        }
+                        }
+
+                        function verifMessage(mes)
+                    {
+                    if(mes.value.length<1)
+                    {
+                        surligne(mes, true);
+                        alertmes = "remplissez le champ message \n";
+                        return false;
+                    }
+                    else
+                    {
+                        surligne(mes, false);
+                        alertmes="";
+                        return true;
+                    }
+                    } 
+
+                    function verifRadio() {
+                       
+                       
+                            if(document.getElementById('choix1').checked == false && document.getElementById('choix2').checked == false )
+                            alertradio ="veuillez renseigner votre sexe! \n";
+                        
+                            else
+                           alertradio ="";
+                           return true;
+                     }
+
+                     
+                    function verifCheck() {
+                       
+                       
+                       if(document.getElementById('option1').checked == false && document.getElementById('option2').checked == false
+                       && document.getElementById('option3').checked == false && document.getElementById('option4').checked == false
+                       && document.getElementById('option5').checked == false && document.getElementById('option6').checked == false)
+                       alertcheck ="veuillez renseigner vos sports favoris! \n";
+                    
+                   
+                       else
+                      alertcheck ="";
+                      return true;
+                }
+                function VerifSelect() {
+                    if (document.getElementById('pays').options[0].selected) {
+                        alertselect="Veuillez sélectionner un pays!";
+                        return false;
+                    }
+                    else
+                    alertselect="";
+                    return true;
+                   }
+                                  
+                    function verifForm(f)
+                            {
+                            var nomOk = verifNom(f.nom);
+                            var mailOk = verifMail(f.email);
+                            var mesOk = verifMessage(f.mes);
+                            var radOk = verifRadio(f.gender);
+                            var checkOK = verifCheck(f.mycheck);
+                            var selectOK =  VerifSelect(f.pays);
+                           
+                            
+                            if(nomOk= mailOk =mesOk  = radOK = checkOK = selectOK==false)
+                            { 
+                                
+                               alert( "les champs suivant ne sont pas correctement remplis:\n\n" +alertnom+"\n" +alertmail+"\n"
+                                +alertmes +"\n" +alertradio  +"\n" + alertcheck  +"\n"+ alertselect );
+                                return false; 
+                               
+                            }
+                            
+
+                            else{ 
+                                alert("Merci, tous les champs sont bien remplis!!!!");
+                                return true;
+                            }
+                           
+                            }
+					
+			
+				</script>
+
+		   </section>
+		
+	</body>
+</html>

@@ -1,0 +1,299 @@
+h1
+{
+	color: gold;
+	font-style: italic;
+	font-size: 1.9em;
+
+}
+
+h2
+{
+	color: purple;
+}
+
+p
+{
+	text-align: justify;
+	font-size: 1.7em;
+
+}
+
+
+.mine
+{
+	height: 0.5em;
+	background: purple;
+	width: 20em;
+
+}
+
+footer
+{
+	text-shadow: 4px 4px 6px purple;
+	background-image: url(img/im.JPG);
+}
+
+header
+{
+	background-color: beige;
+}
+
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: red;
+   font-style: italic;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
+
+#nicetext
+{
+    -webkit-column-count:3; /* Opera, Safari, Google Chrome */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3; /* Internet Explorer */
+    column-gap: 30px;
+    column-rule: 2px dashed purple ;
+
+  }
+
+  header
+  {
+  	   background: repeating-linear-gradient(beige, lightyellow 100px);
+
+  	  
+  }
+
+
+  /* #photo
+  {
+  	transform: scale(1.8, 1);
+    transition-duration: 1s;
+    transition-timing-function: ease; 
+
+  }
+
+  #photo:hover
+{
+    transform: translateX(200px); /* On déplace l'objet */
+
+
+/*@keyframes myframe {
+    from {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(150px);
+    }
+
+    60% {
+        transform: translateX(150px) rotate(30deg);
+    }
+
+    80% {
+        transform: translate(100px, 80px) rotate(30deg);
+    }
+
+    to {
+        transform: translate(100px, 80px) rotate(30deg);
+        border-radius: 30px;
+        background-color: red;
+    }
+} */
+
+
+#form
+{
+    height: 1000px;
+    margin-top: 50px;
+    margin-left: 200px;
+    font: 17px/25px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    
+}
+   .contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;
+}
+#form h2
+{
+    margin-left: -100px;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+:-moz-placeholder {
+    color:#8ec1da;
+}
+ 
+::-webkit-input-placeholder {
+    color:#8ec1da;
+}
+
+
+.contact_form ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+.contact_form li:first-child, .contact_form li:last-child {
+    border-bottom:1px solid #777;
+}
+.contact_form h2 {
+    margin:0;
+    display: inline;
+}
+.required_notification {
+    color:#d45252; 
+    margin:-10px 0 0 0; 
+    display:inline;
+    float:right;
+}
+
+.contact_form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.contact_form input {
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+}
+.contact_form textarea {
+    padding:8px; width:300px;
+}
+.contact_form button {
+    margin-left:156px;
+}
+.contact_form .style { 
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+
+.contact_form .style:focus {
+    background: #fff; 
+    border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+}
+.radio
+{
+    border:none;
+    box-shadow: transparent;
+    border-radius:0px;
+}
+/* Button Style */
+button.submit.env{
+    background-color: #68b12f;
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.submit.env:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.submit.env:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}
+
+
+button.submit.an{
+    background-color: #f03d3d;
+    background: -webkit-linear-gradient(top,  #f03d3d,  #9c1010);
+    background: -moz-linear-gradient(top,  #f03d3d, #9c1010);
+    background: -ms-linear-gradient(top,  #f03d3d, #9c1010);
+    background: -o-linear-gradient(top,  #f03d3d, #9c1010);
+    background: linear-gradient(top,  #f03d3d, #9c1010);
+    border: 1px solid #9c1010;
+    border-bottom: 1px solid #f03d3d;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #daa9a9;
+    -webkit-box-shadow: 0 1px 0 0 #daa9a9 inset ;
+    -moz-box-shadow: 0 1px 0 0 #daa9a9 inset;
+    -ms-box-shadow: 0 1px 0 0 #daa9a9 inset;
+    -o-box-shadow: 0 1px 0 0 #daa9a9 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #9c1010;
+}
+button.submit.an:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.submit.an:active {
+    border: 1px solid #f03d3d;
+    box-shadow: 0 0 10px 5px #9c1010 inset; 
+    -webkit-box-shadow:0 0 10px 5px #9c1010 inset ;
+    -moz-box-shadow: 0 0 10px 5px #9c1010 inset;
+    -ms-box-shadow: 0 0 10px 5px #9c1010 inset;
+    -o-box-shadow: 0 0 10px 5px #9c1010 inset;
+     
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid { /* when a field is considered invalid by the browser */
+    background: #fff url(img/alert.JPG) no-repeat 98% center;
+    background-size: 5%;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid { /* when a field is considered valid by the browser */
+    background: #fff url(img/valid.JPG) no-repeat 98% center;
+    background-size: 5%;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
